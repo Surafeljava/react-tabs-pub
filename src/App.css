@@ -16,7 +16,49 @@ body {
 }
 /* TODO: Add css here */
 .tabs {
+    overflow: hidden;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+}
 
+.tab {
+    background-color: #444444;
+    cursor: pointer;
+    padding: 25px 24px;
+    transition: 0.2s;
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tab:hover{
+    background-color: #616161;
+}
+
+.selected {
+    background-color: #3D668F;
+}
+
+.selected:hover {
+    background-color: #3D668F;
+}
+
+.tab-content{
+    padding: 50px 60px;
+    background-color: white;
+}
+
+.tab-content-description{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
 }
 
 
